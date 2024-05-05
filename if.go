@@ -15,4 +15,10 @@ func main() {
 	} else {
 		fmt.Println("Flase")
 	}
+
+	if len(name) > 4 {
+		fmt.Println("pass")
+	} else {
+		fmt.Println("wrong")
+	}
 }
