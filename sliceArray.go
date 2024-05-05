@@ -16,6 +16,10 @@ import (
 // 	return num
 // }
 
+// func remove[]T(slice []string, index int) int {
+// 	return append(slice[:index], slice[index+1]...)
+// }
+
 func main() {
 	// var months = [...]string{
 	// 	"Januari", "Februari", "March", "April", "Mei", "Juni", "Juli", "Agustus", "September", "November", "Desember",
@@ -70,17 +74,22 @@ func main() {
 
 	fmt.Println(months)
 
-	daysSlice1 := months[5:]
-	daysSlice1[0] = "Juni summer"
-	daysSlice1[3] = "September dumn"
+	slice1 := months[4:6]
+	fmt.Println(len(slice1))
+	fmt.Println(cap(slice1))
 
-	fmt.Println(daysSlice1)
+	fmt.Println(slice1)
 
-	daysSlice2 := append(daysSlice1, "April Mop")
-	fmt.Println(daysSlice2)
+	// months[5] = "Ubah"
+	// fmt.Println(months)
 
-	daysSlice2[0] = "Hari libur!!"
+	// slice1[0] = "April Mop"
+	// fmt.Println(slice1)
 
-	fmt.Println(daysSlice2)
+	slice1 = append(slice1, "Ajustment")
+	fmt.Println(slice1)
+
+	// slice1 = remove(slice1, 0)
+	// fmt.Println(slice1)
 
 }
