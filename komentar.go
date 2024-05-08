@@ -19,3 +19,8 @@ func main(){
 
 
 }
+
+
+/* func isTextComent(){
+
+} */
