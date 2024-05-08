@@ -3,9 +3,11 @@ package main
 import "fmt"
 
 func main(){
-	runApplication(10)
-	runApp(false)
-	runApps(false)
+	// runApplication(10)
+	// runApp(false)
+	runApps(true)
+	fmt.Println("andre")
+
 }
 
 //defer
