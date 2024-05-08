@@ -10,6 +10,9 @@ func main(){
 	var eko Person
 	eko.name = "eko"
 	sayHello(eko)
+
+	cat := Animal{name : "Kucing"}
+	sayHello(cat)
 }
 
 func sayHello(hasName HasName){
@@ -26,4 +29,12 @@ type Person struct{
 
 func (person Person) GetName() string{
 	return person.name
+}
+
+type Animal struct{
+	name string
+}
+
+func (animal Animal) GetName() string{
+	return animal.name
 }
