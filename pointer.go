@@ -46,4 +46,11 @@ func main() {
 	fmt.Println(address1)
 	fmt.Println(address5)
 	fmt.Println(address6)
+
+	//new
+	var address7 *Address = new(Address)
+	address7.city = "Koo"
+	address7.provincie = "IIIO"
+	address7.country = "KJIJID"
+	fmt.Println(address7)
 }
