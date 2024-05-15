@@ -11,6 +11,6 @@ func main() {
 	fmt.Println(goodBye("andre"))
 }
 
-func getGoodBye(name string) string {
+func getG‹oodBye(name string) string {
 	return fmt.Sprintf("Selamat tinggal %s!!, sampai bertemu di lain hari.", name)
 }
